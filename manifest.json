@@ -1,0 +1,10 @@
+{
+  "name": "Um Minuto com Jesus",
+  "short_name": "Com Jesus",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f4eb",
+  "theme_color": "#244c3a",
+  "description": "Uma palavra, uma reflexão e uma oração por dia."
+}

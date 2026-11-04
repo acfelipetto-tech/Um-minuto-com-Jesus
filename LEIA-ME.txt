@@ -1,0 +1,13 @@
+UM MINUTO COM JESUS — PWA
+
+Este pacote contém uma primeira versão do aplicativo:
+- Palavra do dia com referência bíblica e reflexão autoral
+- Prática simples para o dia
+- Campo de oração salvo no próprio navegador
+- Compartilhamento
+- Suporte básico para uso offline após a primeira abertura
+
+IMPORTANTE:
+Para instalar como aplicativo (PWA), os arquivos precisam estar publicados em um endereço HTTPS.
+Abrir o index.html diretamente como arquivo não ativa a instalação PWA.
+Próximo passo sugerido: publicar gratuitamente no GitHub Pages ou em outro serviço HTTPS.
