@@ -1,105 +1,27 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#244c3a">
-  <meta name="description" content="Uma palavra de Jesus por dia, reflexão, oração e pazhttps://github.com/
-  <link rel="manifest" https://github.com/="manifest.json">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <title>Um Minuto com Jesus</title>
-  <style>
-    :root { color-scheme: light; --green:#244c3a; --cream:#f7f4eb; --gold:#d7b66d; --ink:#24312a; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--cream); color:var(--ink); font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; }
-    header { background:var(--green); color:white; padding:24px 20px 28px; border-radius:0 0 24px 24px; }
-    header small { opacity:.85; letter-spacing:.08em; text-transform:uppercase; }
-    h1 { margin:7px 0 4px; font-size:27px; line-height:1.15; }
-    header p { margin:7px 0 0; opacity:.9; }
-    main { max-width:680px; margin:auto; padding:18px 16px 40px; }
-    .card { background:white; border-radius:18px; padding:20px; margin:0 0 15px; box-shadow:0 3px 14px #18291d0d; }
-    .eyebrow { color:#55715f; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
-    h2 { margin:5px 0 10px; font-size:21px; }
-    .reference { color:var(--green); font-weight:700; margin:10px 0 0; }
-    .action { background:#edf3ed; border-left:4px solid var(--gold); padding:12px 14px; border-radius:8px; }
-    button { border:0; border-radius:12px; background:var(--green); color:white; padding:12px 16px; font:inherit; font-weight:650; cursor:pointer; }
-    button.secondary { background:#e8eee8; color:var(--green); }
-    textarea { width:100%; min-height:105px; border:1px solid #d5ddd5; border-radius:12px; padding:12px; font:inherit; resize:vertical; background:#fff; }
-    .row { display:flex; flex-wrap:wrap; gap:9px; margin-top:12px; }
-    .saved { white-space:pre-wrap; overflow-wrap:anywhere; color:#45564a; }
-    footer { text-align:center; color:#68766c; font-size:13px; padding:10px 18px 28px; }
-    .tiny { font-size:13px; color:#68766c; }
-  </style>
-</head>
-<body>
-  <header>
-    <small>Um momento de paz</small>
-    <h1>Um Minuto com Jesus</h1>
-    <p>Uma palavra, uma reflexão e um pequeno passo de fé por dia.</p>
-  </header>
-  <main>
-    <section class="card" aria-live="polite">
-      <div class="eyebrow">Palavra do dia</div>
-      <h2 id="theme">A paz de Jesus</h2>
-      <p id="verse">Jesus oferece uma paz que não depende de tudo estar resolvido.</p>
-      <p class="reference" id="reference">João 14:27</p>
-      <hr style="border:0;border-top:1px solid #edf0eb;margin:17px 0">
-      <div class="eyebrow">Uma reflexão</div>
-      <p id="reflection">Você não precisa carregar todas as preocupações de uma só vez. Hoje, entregue a Jesus aquilo que está pesando no seu coração e dê apenas o próximo passo.</p>
-      <div class="action"><strong>Prática de hoje</strong><br><span id="practice">Faça uma pausa, respire devagar e diga: “Jesus, fica comigo neste dia”.</span></div>
-      <div class="row">
-        <button id="next">Próxima palavra</button>
-        <button class="secondary" id="share">Compartilhar</button>
-      </div>
-      <p class="tiny">As referências indicam onde encontrar o texto na Bíblia. A reflexão é um texto de apoio.</p>
-    </section>
-
-    <section class="card">
-      <div class="eyebrow">Meu momento com Deus</div>
-      <h2>Minha oração de hoje</h2>
-      <textarea id="prayer" placeholder="Escreva aqui sua oração ou aquilo que deseja entregar a Deus..."></textarea>
-      <div class="row"><button id="save">Salvar neste celular</button><button class="secondary" id="clear">Limpar</button></div>
-      <p id="status" class="tiny" role="status">Sua oração fica guardada neste navegador, neste aparelho.</p>
-    </section>
-
-    <section class="card">
-      <div class="eyebrow">Para lembrar</div>
-      <h2>Um passo de cada vez</h2>
-      <p>“Basta a cada dia o seu próprio cuidado.” — Mateus 6:34</p>
-      <p>Você pode voltar aqui quando precisar de alguns minutos de silêncio, oração e esperança.</p>
-    </section>
-  </main>
-  <footer>Feito para cultivar fé, esperança e proximidade com Jesus.</footer>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#174b3a"><title>Um Minuto com Jesus</title><link rel="manifest" href="manifest.json"><style>
+:root{--g:#174b3a;--bg:#f7f4e9;--paper:#fffdf7;--line:#e4e6dc}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#24332c;font-family:system-ui,sans-serif}header{background:var(--g);color:white;padding:20px}header h1{margin:0 0 4px;font-size:22px}header p{margin:0;font-size:13px}nav{display:flex;gap:6px;padding:9px;background:#e9eee6;position:sticky;top:0}nav button{flex:1;border:0;border-radius:10px;padding:11px 4px;background:transparent;color:var(--g);font-weight:bold}nav .active,button.primary{background:var(--g);color:white}main{max-width:760px;margin:auto;padding:14px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:16px;margin-bottom:13px}h2{color:var(--g);font-size:19px;margin:0 0 12px}p{line-height:1.6}.muted{color:#68766e;font-size:13px}.verse{font-size:17px;line-height:1.65}.ref,label{color:var(--g);font-weight:bold}label{font-size:13px}select,textarea{width:100%;padding:12px;border:1px solid #cfd8cf;border-radius:10px;background:white;font:inherit;margin:5px 0 10px}button.primary,button.secondary{border:0;border-radius:10px;padding:12px 15px;font-weight:bold}button.secondary{background:#e8eee8;color:var(--g)}.hide{display:none}.verse-row{display:flex;gap:9px;padding:10px 0;border-bottom:1px solid var(--line)}.num{color:var(--g);font-weight:bold;font-size:12px;padding-top:4px}.vtext{flex:1;line-height:1.6}.save{border:0;background:none;color:var(--g);font-size:20px}.notice{background:#eef4ed;border-radius:9px;padding:10px;font-size:12px;line-height:1.5}footer{text-align:center;color:#68766e;font-size:12px;padding:15px}
+</style></head><body>
+<header><h1>Um Minuto com Jesus</h1><p>Uma pausa para ouvir, aprender e caminhar com Deus.</p></header>
+<nav><button class="active" data-tab="home">Início</button><button data-tab="bible">Bíblia</button><button data-tab="prayer">Oração</button></nav>
+<main>
+<section id="home"><div class="panel"><h2>Um minuto com Jesus</h2><div class="muted">Reflexão do dia</div><p class="verse" id="dv"></p><p id="reflection"></p><b>Prática de hoje</b><p id="practice"></p><button class="primary" id="share">Compartilhar reflexão</button></div><div class="panel"><h2>Um passo de cada vez</h2><p>Você não precisa resolver tudo hoje. Separe um minuto, respire e converse com Jesus com sinceridade.</p></div></section>
+<section id="bible" class="hide"><div class="panel"><h2>Leia a Bíblia</h2><p class="muted">Escolha um livro e capítulo. É necessário internet para carregar a primeira vez.</p><label>Testamento</label><select id="testament"><option value="all">Todos</option><option value="old">Antigo Testamento</option><option value="new">Novo Testamento</option></select><label>Livro</label><select id="book"></select><label>Capítulo</label><select id="chapter"></select><button class="primary" id="load">Abrir capítulo</button><p class="muted" id="status" aria-live="polite"></p></div><div id="chapterPanel" class="panel hide"><h2 id="chapterTitle"></h2><div id="verses"></div><div class="notice" id="copyright">Bíblia Livre (BLIVRE). Créditos aos tradutores: Diego Santos, Mario Sérgio e Marco Teles. Fonte: biblialivre.org.br.</div></div><div class="panel"><h2>Versículos salvos</h2><div id="favorites" class="muted">Toque na estrela ao lado de um versículo para salvá-lo.</div></div></section>
+<section id="prayer" class="hide"><div class="panel"><h2>Meu momento de oração</h2><p>Escreva seu pedido ou agradecimento. O texto fica salvo neste aparelho.</p><textarea id="prayerText" rows="6" placeholder="Jesus, hoje eu quero conversar contigo..."></textarea><button class="primary" id="savePrayer">Salvar oração</button> <span class="muted" id="prayerStatus"></span></div><div class="panel"><h2>Uma promessa de paz</h2><p class="verse">“Deixo-vos a paz, a minha paz vos dou.”</p><b class="ref">João 14:27</b><p>Jesus nos convida a confiar na presença dele em meio às dificuldades.</p></div></section>
+</main><footer>Feito com carinho para ajudar você a se aproximar de Jesus.</footer>
 <script>
-const days = [
- {theme:"A paz de Jesus",verse:"Jesus oferece uma paz que não depende de tudo estar resolvido.",reference:"João 14:27",reflection:"Você não precisa carregar todas as preocupações de uma só vez. Hoje, entregue a Jesus aquilo que está pesando no seu coração e dê apenas o próximo passo.",practice:"Faça uma pausa, respire devagar e diga: “Jesus, fica comigo neste dia”."},
- {theme:"Não caminhe sozinho",verse:"Jesus promete estar com os seus todos os dias.",reference:"Mateus 28:20",reflection:"Mesmo quando você não percebe uma resposta imediata, pode buscar a presença de Jesus. A caminhada de hoje não precisa ser feita com medo do amanhã.",practice:"Converse com Jesus por um minuto, com suas próprias palavras."},
- {theme:"Entregue suas preocupações",verse:"Jesus convida os cansados a se aproximarem dele para encontrar descanso.",reference:"Mateus 11:28",reflection:"Reconhecer o cansaço não é fracasso. Você pode chegar a Jesus exatamente como está, sem precisar fingir que está tudo bem.",practice:"Nomeie uma preocupação e faça uma oração simples sobre ela."},
- {theme:"Deus cuida de você",verse:"Jesus ensina a observar como Deus cuida da criação e a confiar no cuidado do Pai.",reference:"Mateus 6:25-26",reflection:"Planejar é importante, mas a ansiedade não precisa comandar o seu dia. Faça o que está ao seu alcance e entregue a Deus o que não controla.",practice:"Escolha uma tarefa possível para hoje e faça com calma."},
- {theme:"Peça direção",verse:"Jesus convida a pedir, buscar e bater.",reference:"Mateus 7:7",reflection:"Você não precisa ter todas as respostas agora. Pode pedir sabedoria para a próxima decisão e caminhar com humildade.",practice:"Antes de uma decisão, pare e peça sabedoria a Deus."},
- {theme:"Coragem para hoje",verse:"Jesus lembra aos discípulos que não precisam deixar o coração ficar dominado pelo medo.",reference:"João 14:1",reflection:"Sentir medo não significa falta de fé. A fé pode ser dar um pequeno passo mesmo enquanto o coração ainda está aprendendo a descansar.",practice:"Faça hoje uma coisa pequena que você vem adiando por medo."},
- {theme:"Permaneça no amor",verse:"Jesus chama seus discípulos a permanecerem no seu amor.",reference:"João 15:9",reflection:"Seu valor não depende de produzir muito ou acertar sempre. Receba o amor de Cristo e deixe que ele também apareça nas suas atitudes.",practice:"Demonstre carinho a alguém da sua família com uma palavra ou gesto."}
-];
-const today = new Date();
-const start = new Date(today.getFullYear(),0,0);
-const day = Math.floor((today-start)/86400000);
-let index = day % days.length;
-function show() {
- const d=days[index];
- for (const [id,key] of [["theme","theme"],["verse","verse"],["reference","reference"],["reflection","reflection"],["practice","practice"]]) document.getElementById(id).textContent=d[key];
-}
-show();
-document.getElementById("next").addEventListener("click",()=>{index=(index+1)%days.length;show();});
-document.getElementById("share").addEventListener("click",async()=>{
- const d=days[index], msg=`${d.theme}\n${d.verse}\n${d.reference}\n\nReflexão: ${d.reflection}\n\nPrática: ${d.practice}`;
- if(navigator.share){try{await navigator.share({title:"Um Minuto com Jesus",text:msg});}catch(e){}}
- else {try{await navigator.clipboard.writeText(msg);alert("Texto copiado para compartilhar.");}catch(e){alert(msg);}}
-});
-const prayer=document.getElementById("prayer"), status=document.getElementById("status");
-try{prayer.value=localStorage.getItem("minhaOracao")||"";}catch(e){}
-document.getElementById("save").addEventListener("click",()=>{try{localStorage.setItem("minhaOracao",prayer.value);status.textContent="Oração salva neste celular.";}catch(e){status.textContent="Não foi possível salvar neste navegador.";}});
-document.getElementById("clear").addEventListener("click",()=>{prayer.value="";try{localStorage.removeItem("minhaOracao");}catch(e){}status.textContent="Campo limpo.";});
-if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
-</script>
-</body>
-</html>
+const dev=[["“Não se turbe o vosso coração; credes em Deus, crede também em mim.”","João 14:1","Jesus conhece nossas preocupações e nos convida a confiar nele, um dia de cada vez.","Quando uma preocupação aparecer, diga: Jesus, ajuda-me no próximo passo."],["“A minha graça te basta.”","2 Coríntios 12:9","Não precisamos ser fortes o tempo todo. Podemos nos aproximar de Deus quando estamos cansados.","Peça ajuda a Jesus em algo concreto que esteja pesando."],["“Lançando sobre ele toda a vossa ansiedade, porque ele tem cuidado de vós.”","1 Pedro 5:7","Deus se importa com aquilo que é grande para nós.","Conte a Jesus, com suas palavras, o que preocupa você."],["“O Senhor é o meu pastor; nada me faltará.”","Salmo 23:1","O cuidado de Deus nos lembra que não caminhamos abandonados.","Agradeça por uma provisão que recebeu, mesmo que simples."],["“Tudo posso naquele que me fortalece.”","Filipenses 4:13","Com Cristo, podemos enfrentar cada etapa sem resolver tudo de uma vez.","Escolha uma tarefa pequena e faça com calma."],["“Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei.”","Mateus 11:28","Jesus chama para perto quem está cansado.","Reserve cinco minutos para descansar e conversar com Jesus."],["“O Senhor está perto de todos os que o invocam.”","Salmo 145:18","Você pode falar com Deus com sinceridade.","Faça uma oração curta e verdadeira hoje."]];
+const d=dev[Math.floor(Date.now()/86400000)%dev.length];dv.textContent=d[0]+" — "+d[1];reflection.textContent=d[2];practice.textContent=d[3];
+share.onclick=async()=>{let t="Um Minuto com Jesus\n"+d.join("\n");try{if(navigator.share)await navigator.share({title:"Um Minuto com Jesus",text:t});else{await navigator.clipboard.writeText(t);alert("Reflexão copiada.");}}catch(e){}};
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");["home","bible","prayer"].forEach(id=>document.getElementById(id).classList.toggle("hide",id!==b.dataset.tab));});
+const books=[["Gênesis","genesis",50,"old"],["Êxodo","exodo",40,"old"],["Levítico","levitico",27,"old"],["Números","numeros",36,"old"],["Deuteronômio","deuteronomio",34,"old"],["Josué","josue",24,"old"],["Juízes","juizes",21,"old"],["Rute","rute",4,"old"],["1 Samuel","1-samuel",31,"old"],["2 Samuel","2-samuel",24,"old"],["1 Reis","1-reis",22,"old"],["2 Reis","2-reis",25,"old"],["1 Crônicas","1-cronicas",29,"old"],["2 Crônicas","2-cronicas",36,"old"],["Esdras","esdras",10,"old"],["Neemias","neemias",13,"old"],["Ester","ester",10,"old"],["Jó","jo",42,"old"],["Salmos","salmos",150,"old"],["Provérbios","proverbios",31,"old"],["Eclesiastes","eclesiastes",12,"old"],["Cânticos","canticos",8,"old"],["Isaías","isaias",66,"old"],["Jeremias","jeremias",52,"old"],["Lamentações","lamentacoes",5,"old"],["Ezequiel","ezequiel",48,"old"],["Daniel","daniel",12,"old"],["Oseias","oseias",14,"old"],["Joel","joel",3,"old"],["Amós","amos",9,"old"],["Obadias","obadias",1,"old"],["Jonas","jonas",4,"old"],["Miqueias","miqueias",7,"old"],["Naum","naum",3,"old"],["Habacuque","habacuque",3,"old"],["Sofonias","sofonias",3,"old"],["Ageu","ageu",2,"old"],["Zacarias","zacarias",14,"old"],["Malaquias","malaquias",4,"old"],["Mateus","mateus",28,"new"],["Marcos","marcos",16,"new"],["Lucas","lucas",24,"new"],["João","joao",21,"new"],["Atos","atos",28,"new"],["Romanos","romanos",16,"new"],["1 Coríntios","1-corintios",16,"new"],["2 Coríntios","2-corintios",13,"new"],["Gálatas","galatas",6,"new"],["Efésios","efesios",6,"new"],["Filipenses","filipenses",4,"new"],["Colossenses","colossenses",4,"new"],["1 Tessalonicenses","1-tessalonicenses",5,"new"],["2 Tessalonicenses","2-tessalonicenses",3,"new"],["1 Timóteo","1-timoteo",6,"new"],["2 Timóteo","2-timoteo",4,"new"],["Tito","tito",3,"new"],["Filemom","filemom",1,"new"],["Hebreus","hebreus",13,"new"],["Tiago","tiago",5,"new"],["1 Pedro","1-pedro",5,"new"],["2 Pedro","2-pedro",3,"new"],["1 João","1-joao",5,"new"],["2 João","2-joao",1,"new"],["3 João","3-joao",1,"new"],["Judas","judas",1,"new"],["Apocalipse","apocalipse",22,"new"]];
+const ts=document.getElementById("testament"),bs=document.getElementById("book"),cs=document.getElementById("chapter");
+function fillBooks(){bs.innerHTML=books.filter(x=>ts.value==="all"||x[3]===ts.value).map(x=>`<option value="${x[1]}">${x[0]}</option>`).join("");fillChapters()}
+function fillChapters(){let b=books.find(x=>x[1]===bs.value);cs.innerHTML=Array.from({length:b[2]},(_,i)=>`<option>${i+1}</option>`).join("")}
+ts.onchange=fillBooks;bs.onchange=fillChapters;fillBooks();
+const key="umMinutoJesusFavorites";function favs(){try{return JSON.parse(localStorage.getItem(key)||"[]")}catch(e){return[]}}
+function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function showFavs(){let a=favs();favorites.innerHTML=a.length?a.map((x,i)=>`<div class="verse-row"><div class="vtext"><b>${safe(x.ref)}</b><br>${safe(x.text)}</div><button class="save" data-del="${i}">×</button></div>`).join(""):"Toque na estrela ao lado de um versículo para salvá-lo.";favorites.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{let a=favs();a.splice(+b.dataset.del,1);localStorage.setItem(key,JSON.stringify(a));showFavs()})}
+load.onclick=async()=>{let b=books.find(x=>x[1]===bs.value),c=cs.value;status.textContent="Carregando capítulo…";chapterPanel.classList.add("hide");try{let r=await fetch("https://api.midvash.com/v1/almeida-livre/"+b[1]+"/"+c);if(!r.ok)throw Error("Não foi possível carregar ("+r.status+").");let j=await r.json(),data=j.data??j,arr=data.verses??data.chapter?.verses??data.items??[];if(!Array.isArray(arr)&&Array.isArray(data))arr=data;let vv=arr.map((v,i)=>({n:v.verse??v.number??v.verse_number??i+1,t:v.text??v.content??v.verse_text??v.body??""})).filter(v=>v.t);if(!vv.length)throw Error("Não consegui interpretar o texto recebido. Tente novamente.");chapterTitle.textContent=b[0]+" "+c;copyright.textContent=(j.meta?.copyright??"Bíblia Livre (BLIVRE). Créditos: Diego Santos, Mario Sérgio e Marco Teles. Fonte: biblialivre.org.br.")+" | Bíblia Livre (BLIVRE).";verses.innerHTML=vv.map(v=>{let ref=b[0]+" "+c+":"+v.n;return `<div class="verse-row"><span class="num">${safe(v.n)}</span><div class="vtext">${safe(v.t)}</div><button class="save" data-ref="${safe(ref)}" data-text="${safe(v.t)}">☆</button></div>`}).join("");verses.querySelectorAll("[data-ref]").forEach(btn=>btn.onclick=()=>{let a=favs(),ref=btn.dataset.ref;if(!a.some(x=>x.ref===ref)){a.push({ref,text:btn.dataset.text});localStorage.setItem(key,JSON.stringify(a));btn.textContent="★";showFavs()}else{a=a.filter(x=>x.ref!==ref);localStorage.setItem(key,JSON.stringify(a));btn.textContent="☆";showFavs()}});chapterPanel.classList.remove("hide");status.textContent=vv.length+" versículos carregados."}catch(e){status.textContent=e.message+" Confira a internet e tente de novo."}};
+showFavs();prayerText.value=localStorage.getItem("umMinutoJesusPrayer")||"";savePrayer.onclick=()=>{localStorage.setItem("umMinutoJesusPrayer",prayerText.value);prayerStatus.textContent="Oração salva neste aparelho."};
+if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+</script></body></html>
